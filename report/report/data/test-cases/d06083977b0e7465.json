@@ -1,0 +1,386 @@
+{
+  "uid" : "d06083977b0e7465",
+  "name" : "test_user_login_wrong",
+  "fullName" : "testcase.test_login.TestLogin#test_user_login_wrong",
+  "historyId" : "8923e36b93bfcbf2b1b29bba9c76fef6",
+  "time" : {
+    "start" : 1600854527890,
+    "stop" : 1600854528161,
+    "duration" : 271
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "env",
+    "time" : {
+      "start" : 1600854526908,
+      "stop" : 1600854526915,
+      "duration" : 7
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "pytestconfig",
+    "time" : {
+      "start" : 1600854526908,
+      "stop" : 1600854526908,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "get_excel",
+    "time" : {
+      "start" : 1600854527889,
+      "stop" : 1600854527889,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "addoption_env",
+    "time" : {
+      "start" : 1600854526908,
+      "stop" : 1600854526908,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "do_login",
+    "time" : {
+      "start" : 1600854526588,
+      "stop" : 1600854526908,
+      "duration" : 320
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "get_token_class",
+    "time" : {
+      "start" : 1600854527889,
+      "stop" : 1600854527889,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "测试登录模块"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "story",
+    "value" : "测试登录密码错误"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "TX5C3S1L7D31UYD"
+  }, {
+    "name" : "thread",
+    "value" : "13292-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "/basic/auth/login",
+    "url" : "/basic/auth/login",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ {
+      "uid" : "c8f20335ed8dbe49",
+      "status" : "passed",
+      "time" : {
+        "start" : 1600854497560,
+        "stop" : 1600854497874,
+        "duration" : 314
+      }
+    }, {
+      "uid" : "4255125d6130ddca",
+      "status" : "passed",
+      "time" : {
+        "start" : 1600854477282,
+        "stop" : 1600854477498,
+        "duration" : 216
+      }
+    }, {
+      "uid" : "d48172eedcaf3551",
+      "status" : "passed",
+      "time" : {
+        "start" : 1600417642653,
+        "stop" : 1600417643884,
+        "duration" : 1231
+      }
+    }, {
+      "uid" : "7cda0d8b1ceb767b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1600417629118,
+        "stop" : 1600417629161,
+        "duration" : 43
+      }
+    }, {
+      "uid" : "e61f873d635c1e53",
+      "status" : "passed",
+      "time" : {
+        "start" : 1600417567577,
+        "stop" : 1600417567640,
+        "duration" : 63
+      }
+    }, {
+      "uid" : "ae55cd9c4b3f88f6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1600417482393,
+        "stop" : 1600417482454,
+        "duration" : 61
+      }
+    }, {
+      "uid" : "e060e9f351acb54e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1600240936555,
+        "stop" : 1600240936555,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "765a929d83456f1b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1600239526187,
+        "stop" : 1600239526393,
+        "duration" : 206
+      }
+    }, {
+      "uid" : "daf843d6efbe2e21",
+      "status" : "passed",
+      "time" : {
+        "start" : 1600238772680,
+        "stop" : 1600238772901,
+        "duration" : 221
+      }
+    }, {
+      "uid" : "f243277ec20c324",
+      "status" : "passed",
+      "time" : {
+        "start" : 1600238709644,
+        "stop" : 1600238709854,
+        "duration" : 210
+      }
+    }, {
+      "uid" : "5d3ee33d71aa0d7e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1600238350320,
+        "stop" : 1600238350521,
+        "duration" : 201
+      }
+    }, {
+      "uid" : "eecbbfdd65fb849",
+      "status" : "passed",
+      "time" : {
+        "start" : 1600238213635,
+        "stop" : 1600238213901,
+        "duration" : 266
+      }
+    }, {
+      "uid" : "b560fbeb43b33f6a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1600238166981,
+        "stop" : 1600238167185,
+        "duration" : 204
+      }
+    }, {
+      "uid" : "6d7d92d035a5978e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1600238085771,
+        "stop" : 1600238085975,
+        "duration" : 204
+      }
+    }, {
+      "uid" : "aa59211c9201fb02",
+      "status" : "passed",
+      "time" : {
+        "start" : 1600238025445,
+        "stop" : 1600238025657,
+        "duration" : 212
+      }
+    }, {
+      "uid" : "570b91e96ea3d459",
+      "status" : "passed",
+      "time" : {
+        "start" : 1600237978335,
+        "stop" : 1600237978545,
+        "duration" : 210
+      }
+    }, {
+      "uid" : "1037dd3d61f094f7",
+      "status" : "broken",
+      "statusDetails" : "_pytest.fixtures.FixtureLookupError: ('api', <FixtureRequest for <Function test_user_login_wrong>>)",
+      "time" : {
+        "start" : 1600237825752,
+        "stop" : 1600237825752,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "83f80c125621f826",
+      "status" : "broken",
+      "statusDetails" : "_pytest.fixtures.FixtureLookupError: ('api', <FixtureRequest for <Function test_user_login_wrong>>)",
+      "time" : {
+        "start" : 1600237772191,
+        "stop" : 1600237772191,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "ea74dba97ab44a1",
+      "status" : "broken",
+      "statusDetails" : "_pytest.fixtures.FixtureLookupError: ('api', <FixtureRequest for <Function test_user_login_wrong>>)",
+      "time" : {
+        "start" : 1600237676108,
+        "stop" : 1600237676109,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "4902d6d1d3a4a938",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599816741139,
+        "stop" : 1599816741337,
+        "duration" : 198
+      }
+    }, {
+      "uid" : "9ea935699624e41f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599816603068,
+        "stop" : 1599816603272,
+        "duration" : 204
+      }
+    }, {
+      "uid" : "9de0305d15af05fd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599816358006,
+        "stop" : 1599816358208,
+        "duration" : 202
+      }
+    }, {
+      "uid" : "f319ae87896e8bc1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599815790422,
+        "stop" : 1599815790626,
+        "duration" : 204
+      }
+    }, {
+      "uid" : "6098c59d86d2f324",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599815736989,
+        "stop" : 1599815737193,
+        "duration" : 204
+      }
+    }, {
+      "uid" : "dd8ff54153cad7b7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599815655507,
+        "stop" : 1599815655712,
+        "duration" : 205
+      }
+    }, {
+      "uid" : "c2e8edcd61237bcf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599815447611,
+        "stop" : 1599815447810,
+        "duration" : 199
+      }
+    }, {
+      "uid" : "81efc0388541b99b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599815239174,
+        "stop" : 1599815239374,
+        "duration" : 200
+      }
+    }, {
+      "uid" : "f46391f37e5cd659",
+      "status" : "passed",
+      "time" : {
+        "start" : 1599815201090,
+        "stop" : 1599815201295,
+        "duration" : 205
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d06083977b0e7465.json",
+  "parameterValues" : [ ]
+}

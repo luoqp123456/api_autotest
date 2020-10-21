@@ -1,0 +1,6 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Sep 23 17:48:47 CST 2020","Wed Sep 23 17:48:47 CST 2020","267","testcase","test_enteripse","Testenterprise","","","test_addenterprise03",""
+"passed","Wed Sep 23 17:48:48 CST 2020","Wed Sep 23 17:48:48 CST 2020","263","testcase","test_login","TestLogin","","","test_user_login_normal",""
+"passed","Wed Sep 23 17:48:47 CST 2020","Wed Sep 23 17:48:48 CST 2020","271","testcase","test_login","TestLogin","","","test_user_login_wrong",""
+"passed","Wed Sep 23 17:48:47 CST 2020","Wed Sep 23 17:48:47 CST 2020","260","testcase","test_enteripse","Testenterprise","","","test_addenterprise02",""
+"passed","Wed Sep 23 17:48:46 CST 2020","Wed Sep 23 17:48:47 CST 2020","428","testcase","test_enteripse","Testenterprise","","","test_addenterprise01","组织架构，添加子企业与员工"

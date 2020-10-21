@@ -1,0 +1,82 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "test_addenterprise01",
+    "uid" : "8b1923d4b2ac4649",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1600854526918,
+      "stop" : 1600854527346,
+      "duration" : 428
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_addenterprise02",
+    "uid" : "1a071838ace8668e",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1600854527350,
+      "stop" : 1600854527610,
+      "duration" : 260
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_addenterprise03",
+    "uid" : "adf25a36addb324",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1600854527613,
+      "stop" : 1600854527880,
+      "duration" : 267
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "测试登录模块",
+    "children" : [ {
+      "name" : "测试登录密码错误",
+      "children" : [ {
+        "name" : "test_user_login_wrong",
+        "uid" : "d06083977b0e7465",
+        "parentUid" : "26240c1656f341deece39553aceda5fa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600854527890,
+          "stop" : 1600854528161,
+          "duration" : 271
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "26240c1656f341deece39553aceda5fa"
+    }, {
+      "name" : "测试登录成功",
+      "children" : [ {
+        "name" : "test_user_login_normal",
+        "uid" : "37dfc85327ad89e9",
+        "parentUid" : "33f6cc4cdb1a6b6757894af9cd618375",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600854528164,
+          "stop" : 1600854528427,
+          "duration" : 263
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "33f6cc4cdb1a6b6757894af9cd618375"
+    } ],
+    "uid" : "f0db57fcbc878651f0da9d51cd8b1d3c"
+  } ]
+}
