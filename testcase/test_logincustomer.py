@@ -2,7 +2,8 @@
 import allure
 import pytest
 import sys
-from commen.loggerhandler import log_case_info
+from commen.operate_logger import log_case_info
+from commen.operatr_assert import assert_in_text
 from commen.readexcel import *
 from commen.send_request import *
 sys.path.append('../..')
@@ -22,6 +23,7 @@ class Testlogincustomer:
         case_data = get_test_data(self.excel_data, 'logincustomer')  # 从数据列表中查找到该用例数据
         res = send_request(get_session,case_data)
         assert case_data['expect_res'] == res["message"]
+        assert_in_text(res, case_data['expect_res'])
         log_case_info(case_data, res)
 
 

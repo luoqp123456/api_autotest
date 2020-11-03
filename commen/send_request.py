@@ -1,8 +1,6 @@
-from commen.operate_json import *
 import logging
 from commen.operate_action import update_data
-from commen.operate_yaml import write_depend_data_yaml, read_depend_data_yaml, regular_data_yaml, write_path_data_yaml, \
-    read_path_data_yaml
+from commen.operate_yaml import *
 
 logging.getLogger("requests").setLevel(logging.WARNING)
 
@@ -84,7 +82,6 @@ def send_request(s, case_data):  # 传递用例数据，发送请求
             res = run_main(s, method, url, data, headers)
             write_path_data_yaml(res, transfer_path)
             write_depend_data_yaml(res, transfer_data)
-
 
     elif transfer_data == "" and depend_data != "":
         if dif_data == "" and transfer_path == "":

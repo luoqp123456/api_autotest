@@ -4,7 +4,7 @@ import re
 import sys
 import allure
 import pytest
-from commen.loggerhandler import log_case_info
+from commen.operate_logger import log_case_info
 from commen.readexcel import *
 from commen.send_request import send_request
 sys.path.append('../..')

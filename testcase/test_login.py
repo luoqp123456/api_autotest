@@ -1,7 +1,7 @@
 import allure
 import pytest
 import sys
-from commen.loggerhandler import log_case_info
+from commen.operate_logger import log_case_info
 from commen.readexcel import get_test_data
 from commen.send_request import send_request
 sys.path.append('../..')
