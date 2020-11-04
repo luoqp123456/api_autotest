@@ -5,7 +5,6 @@ import sys
 import allure
 import pytest
 from commen.loggerhandler import log_case_info
-from commen.operate_action import updatetoken
 from commen.readexcel import *
 from commen.send_request import send_request
 sys.path.append('../..')
