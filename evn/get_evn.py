@@ -1,4 +1,4 @@
-from commen.poerate_config import Config
+from commen.operate_config import Config
 from commen.readexcel import excel_to_list
 
 

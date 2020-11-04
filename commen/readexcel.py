@@ -16,6 +16,7 @@ def excel_to_list(xls_name, sheet_name):     #读取Excel表格sheet下的用例
 def get_test_data(data_list, casename):       #传递表格的全部数据，根据用例的名称获取数据
     for case_data in data_list:
         if casename == case_data['casename']:  # 如果字典数据中case_name与参数一致
+
             return case_data
             # 如果查询不到会返回None
 

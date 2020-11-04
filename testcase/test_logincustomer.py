@@ -3,7 +3,6 @@ import allure
 import pytest
 import sys
 from commen.loggerhandler import log_case_info
-from commen.operate_token import updatetoken
 from commen.readexcel import *
 from commen.send_request import *
 sys.path.append('../..')
@@ -19,19 +18,11 @@ class Testlogincustomer:
     excel_data = []
     token = []
 
-    def logincustomer(self):
+    def test_logincustomer(self, get_session):
         case_data = get_test_data(self.excel_data, 'logincustomer')  # 从数据列表中查找到该用例数据
-        # url = case_data.get('url')
-        # data = case_data.get('data')
-        # headers = case_data.get('headers')
-        # method = case_data.get('method')
-        # depend = case_data.get('depend')
-        # dependdata = case_data.get('dependdata')
-        updatetoken(self.token, case_data)
-        res = send_request(case_data)
+        res = send_request(get_session,case_data)
         assert case_data['expect_res'] == res["message"]
         log_case_info(case_data, res)
-        # print(url, data, headers, method, depend, dependdata)
 
 
 if __name__ == '__main__':   # 非必要，用于测试我们的代码

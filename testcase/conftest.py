@@ -1,21 +1,30 @@
 import pytest
-from commen.operate_token import login
+import requests
+from commen.operate_action import login
 from config.confi import *
 from evn.get_evn import EnvMember
 sys.path.append('../..')
 
 
+# @pytest.fixture(scope="session",autouse=True)
+# def do_login():
+#     token = login()
+#     return token
+
+#
+# #将Token设置为全局变量
+# @pytest.fixture(scope="class",autouse=True)
+# def get_token_class(request, do_login):
+#     token = do_login
+#     request.cls.token = token
+
 @pytest.fixture(scope="session",autouse=True)
-def do_login():
+def get_session():
+    r = requests.session()
     token = login()
-    return token
-
-
-#将Token设置为全局变量
-@pytest.fixture(scope="class",autouse=True)
-def get_token_class(request, do_login):
-    token = do_login
-    request.cls.token = token
+    h2 = {"Authorization": token}
+    r.headers.update(h2)
+    return r
 
 
 #将读取的数据设置为全局变量

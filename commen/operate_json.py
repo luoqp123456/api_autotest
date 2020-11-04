@@ -49,7 +49,6 @@ def getres_depend(result, json_k):
     return depend_data
 
 
-
 if __name__ == '__main__':
     # logging.info("hello")
     # rewrite_json_file()
