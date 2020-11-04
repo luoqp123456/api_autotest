@@ -94,6 +94,46 @@ def regular_data_yaml(case_data):
         return case_data['data']
 
 
+def regular_path(actual_response, case_data):
+    # 处理路径参数Path的依赖
+    # 传进来的参数类似 {"case_002":"$.data.id"}/item/{"case_002":"$.meta.status"}，进行列表拆分
+    path = case_data['url']
+    path_list = path.split('/')
+    # 获取列表长度迭代
+    for i in range(len(path_list)):
+        # 按着
+        from json import JSONDecodeError
+        try:
+            # 尝试序列化成dict:   json.loads('2') 可以转换成2
+            path_dict = json.loads(path_list[i])
+        except JSONDecodeError as e:
+            # 序列化失败此path_list[i]的值不变化
+            print(f'无法转换字典，进入下一个检查，本轮值不发生变化:{path_list[i]},{e}')
+            # 跳过进入下次循环
+            continue
+        else:
+            # 解析该字典，获得用例编号，表达式
+            print(f'{path_dict}')
+            # 处理json.loads('数字')正常序列化导致的AttributeError
+            try:
+                for k, v in path_dict.items():
+                    try:
+                        # 尝试从对应的case实际响应提取某个字段内容
+                        path_list[i] = jsonpath.jsonpath(actual_response, v)[0]
+                    except TypeError as e:
+                        print(f'无法提取，请检查响应字典中是否支持该表达式,{e}')
+            except AttributeError as e:
+                print(f'类型错误:{type(path_list[i])}，本此将不转换值 {path_list[i]},{e}')
+    # 字典中存在有不是str的元素:使用map 转换成全字符串的列表
+    path_list = map(str, path_list)
+    # 将字符串列表转换成字符：500/item/200
+    parameters_path_url = "/".join(path_list)
+    print(f'path路径参数解析依赖后的路径为{parameters_path_url}')
+    return parameters_path_url
+
+
+
+
 if __name__ == '__main__':
     # data1 = load_yaml(depend_data_yaml_path)
     # print(data1)

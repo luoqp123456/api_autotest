@@ -42,7 +42,7 @@ def send_request(s, case_data):  # 传递用例数据，发送请求
     dif_data = case_data.get('dif_data')
     # url = self.base_url + url if self.base_url else url
 
-    if transfer_data == "" and depend_data == "" :
+    if transfer_data == "" and depend_data == "":
         if dif_data == "":
             res = run_main(s, method, url, data, headers)
         else:
