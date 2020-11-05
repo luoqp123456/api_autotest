@@ -1,7 +1,8 @@
 from commen.operate_json import *
 import logging
 from commen.operate_action import update_data
-from commen.operate_yaml import write_depend_data_yaml, read_depend_data_yaml, regular_data_yaml
+from commen.operate_yaml import write_depend_data_yaml, read_depend_data_yaml, regular_data_yaml, write_path_data_yaml, \
+    read_path_data_yaml
 
 logging.getLogger("requests").setLevel(logging.WARNING)
 
@@ -40,47 +41,108 @@ def send_request(s, case_data):  # 传递用例数据，发送请求
     transfer_data = case_data.get('transfer_data')
     depend_data = case_data.get('depend_data')
     dif_data = case_data.get('dif_data')
+    transfer_path = case_data.get('transfer_path')
     # url = self.base_url + url if self.base_url else url
 
     if transfer_data == "" and depend_data == "":
-        if dif_data == "":
+        if dif_data == "" and transfer_path == '':
+            url = read_path_data_yaml(case_data)
             res = run_main(s, method, url, data, headers)
-        else:
+        elif dif_data != "" and transfer_path == "":
+            url = read_path_data_yaml(case_data)
             case_data['data'] = regular_data_yaml(case_data)
             res = run_main(s, method, url, data, headers)
+        elif dif_data == "" and transfer_path != "":
+            url = read_path_data_yaml(case_data)
+            res = run_main(s, method, url, data, headers)
+            write_path_data_yaml(res, transfer_path)
+        else:
+            url = read_path_data_yaml(case_data)
+            case_data['data'] = regular_data_yaml(case_data)
+            res = run_main(s, method, url, data, headers)
+            write_path_data_yaml(res, transfer_path)
 
     elif transfer_data != "" and depend_data == "":
-        if dif_data == "":
+        if dif_data == "" and transfer_path == "":
+            url = read_path_data_yaml(case_data)
             res = run_main(s, method, url, data, headers)
             write_depend_data_yaml(res, transfer_data)
-        else:
+        elif dif_data != "" and transfer_path == "":
+            url = read_path_data_yaml(case_data)
             case_data['data'] = regular_data_yaml(case_data)
             res = run_main(s, method, url, data, headers)
             write_depend_data_yaml(res, transfer_data)
+
+        elif dif_data == "" and transfer_path != '':
+            url = read_path_data_yaml(case_data)
+            res = run_main(s, method, url, data, headers)
+            write_path_data_yaml(res, transfer_path)
+            write_depend_data_yaml(res, transfer_data)
+        else:
+            url = read_path_data_yaml(case_data)
+            case_data['data'] = regular_data_yaml(case_data)
+            res = run_main(s, method, url, data, headers)
+            write_path_data_yaml(res, transfer_path)
+            write_depend_data_yaml(res, transfer_data)
+
 
     elif transfer_data == "" and depend_data != "":
-        if dif_data == "":
-            depend = read_depend_data_yaml(case_data["depend_data"])
-            update_data(depend, case_data)
-            res = run_main(s, method, url, data, headers)
-        else:
-            case_data['data'] = regular_data_yaml(case_data)
+        if dif_data == "" and transfer_path == "":
+            url = read_path_data_yaml(case_data)
             depend = read_depend_data_yaml(case_data["depend_data"])
             update_data(depend, case_data)
             res = run_main(s, method, url, data, headers)
 
+        elif dif_data != "" and transfer_path == "":
+            url = read_path_data_yaml(case_data)
+            case_data['data'] = regular_data_yaml(case_data)
+            depend = read_depend_data_yaml(case_data["depend_data"])
+            update_data(depend, case_data)
+            res = run_main(s, method, url, data, headers)
+        elif dif_data == "" and transfer_path != "":
+            url = read_path_data_yaml(case_data)
+            depend = read_depend_data_yaml(case_data["depend_data"])
+            update_data(depend, case_data)
+            res = run_main(s, method, url, data, headers)
+            write_path_data_yaml(res, transfer_path)
+        else:
+            url = read_path_data_yaml(case_data)
+            case_data['data'] = regular_data_yaml(case_data)
+            depend = read_depend_data_yaml(case_data["depend_data"])
+            update_data(depend, case_data)
+            res = run_main(s, method, url, data, headers)
+            write_path_data_yaml(res, transfer_path)
+
     elif transfer_data != "" and depend_data != "":
-        if dif_data == "":
+        if dif_data == "" and transfer_path == "":
+            url = read_path_data_yaml(case_data)
             depend = read_depend_data_yaml(case_data["depend_data"])
             update_data(depend, case_data)
             res = run_main(s, method, url, data, headers)
             write_depend_data_yaml(res, transfer_data)
-        else:
+        elif dif_data != "" and transfer_path == "":
+            url = read_path_data_yaml(case_data)
             case_data['data'] = regular_data_yaml(case_data)
             depend = read_depend_data_yaml(case_data["depend_data"])
             update_data(depend, case_data)
             res = run_main(s, method, url, data, headers)
             write_depend_data_yaml(res, transfer_data)
+        elif dif_data == "" and transfer_path != "":
+            url = read_path_data_yaml(case_data)
+            depend = read_depend_data_yaml(case_data["depend_data"])
+            update_data(depend, case_data)
+            res = run_main(s, method, url, data, headers)
+            write_depend_data_yaml(res, transfer_data)
+            write_path_data_yaml(res, transfer_path)
+
+        else:
+            url = read_path_data_yaml(case_data)
+            case_data['data'] = regular_data_yaml(case_data)
+            depend = read_depend_data_yaml(case_data["depend_data"])
+            update_data(depend, case_data)
+            res = run_main(s, method, url, data, headers)
+            write_depend_data_yaml(res, transfer_data)
+            write_path_data_yaml(res, transfer_path)
     else:
         print("判断错误")
     return res
