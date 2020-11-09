@@ -3,8 +3,8 @@ import jsonpath
 from config.confi import resdatajson_path, json_path
 
 
-def writedata(data_json, dic_json=resdatajson_path):            #保持原有的json数据，再写上或更新数据
-    data = dict(readdata(dic_json))
+def writedata(data_json, dic_json=json_path):            #保持原有的json数据，再写上或更新数据
+    data = dict(readdata())
     data.update(data_json)
     # 写入 JSON 数据
     with open(dic_json, 'w', encoding='utf-8') as f:
@@ -22,24 +22,27 @@ def readdata(dic_json=resdatajson_path):
             print("该json文件没有数据")
 
 
-def writeresdata(resdata, dic_json=resdatajson_path):
+def writeresdata(resdata, dic_json=json_path):
     # 写入 JSON 数据
     with open(dic_json, 'w', encoding='utf-8') as f:
         json.dump(resdata, f, ensure_ascii=False, indent=4)
 
 
-def update_json_value(k, v, dic_json=json_path):                           #输入json文件，key，value值进行对json修改
-    data_json = readdata(dic_json)                     #将json文件读取且内容转为字典
+def update_json_value(k, v):                           #输入json文件，key，value值进行对json修改
+    data_json = readdata()                     #将json文件读取且内容转为字典
     for key in list(data_json):                          #字典不能在迭代中修改，转为list进行修改
+        n=0
         if key == k:                                        #判断不是dict，可直接取值并修改
             data_json[key] = v
-            writedata(dic_json, data_json)
+            writeresdata(data_json)
         elif isinstance(data_json[key], dict):              #判断是dict，取出字典
             in_datajson = data_json[key]
             for key_in in list(in_datajson):                #在取出的字典转为list，再次进行循环查找
                 if key_in == k:
                     in_datajson[key_in] = v
-                    writedata(dic_json, data_json)
+                    writeresdata(data_json)
+                    n=n+1
+                    print(n)
         else:
             print("没有对应的value")
 
@@ -53,10 +56,11 @@ if __name__ == '__main__':
     # logging.info("hello")
     # rewrite_json_file()
     # print(prj_path,data_path)
-    data_jsonup = {"loginout2":{"loginout":"xiugai"}}
+    # data_jsonup = {"loginout2":{"loginout":"xiugai"}}
     # writejson_save(json_path,data_jsonup)
     # data_json = {"kk":"write"}
-    writeresdata(data_jsonup)
+    update_json_value('loginout','123')
+    # writeresdata(data_jsonup)
     # url = "http://api.etmprot.etmcn.com/basic/auth/login"
     # headers = {"Content-Type": "application/json"}
     # data = {"telephone": "15521283804","password": "666666","type": "PASSWORD"}

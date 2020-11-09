@@ -1,14 +1,4 @@
-test_add_fuel_card_normal:
-  card_number: 999
-  data_source_id: 999
-  test_add_fuel_card_normal2: 333
-  data_source_121212: 999
-case_001:
-  id: 333
-  num: '155212'
-case_002:
-  id2: 4879
-  num: 152487
-  id: 333
-case_003 :
-  path01: path
+case_009:
+  id: 133
+case_011:
+  courseManagementId: 137

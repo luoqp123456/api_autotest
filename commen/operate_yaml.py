@@ -39,8 +39,8 @@ def write_depend_data_yaml(actual_response, transfer_data):
 # :param depend: 需要依赖数据字典{"case_001":"['jsonpaht表达式1', 'jsonpaht表达式2']"}
 #返回 depend_dict = {"name": "ceshi", "id": "1"}
     transfer_dict = {}
-    # transfer = json.loads(transfer_data)
-    for k, v in transfer_data.items():
+    transfer = json.loads(transfer_data)
+    for k, v in transfer.items():
         # 取得依赖中对应case编号的值提取表达式
         try:
             for value in v:
@@ -136,8 +136,8 @@ def write_path_data_yaml(actual_response, path_data):
 # :param depend: 需要依赖数据字典{"case_001":"['jsonpaht表达式1', 'jsonpaht表达式2']"}
 #返回 depend_dict = {"name": "ceshi", "id": "1"}
     path_dict = {}
-    # transfer = json.loads(transfer_data)
-    for k, v in path_data.items():
+    transfer_path_data = json.loads(path_data)
+    for k, v in transfer_path_data.items():
         # 取得依赖中对应case编号的值提取表达式
         try:
             for value in v:
