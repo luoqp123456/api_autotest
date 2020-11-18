@@ -2530,3 +2530,126 @@
 [2020-11-09 14:27:27] INFO [log_case_info: operate_logger.py, 15] 请求参数：{"courseManagementId": "137"}
 [2020-11-09 14:27:27] INFO [log_case_info: operate_logger.py, 16] 期望结果：成功
 [2020-11-09 14:27:27] INFO [log_case_info: operate_logger.py, 17] 实际结果：{'data': None, 'code': 0, 'message': '成功', 'traceId': '59e40e730e5c45a59df1cd604050d99d', 'detail': None}
+[2020-11-09 15:17:49] DEBUG [_new_conn: connectionpool.py, 230] Starting new HTTP connection (1): api.etmprot.etmcn.com:80
+[2020-11-09 15:17:49] DEBUG [_make_request: connectionpool.py, 442] http://api.etmprot.etmcn.com:80 "POST /basic/auth/login HTTP/1.1" 200 None
+[2020-11-09 15:17:49] DEBUG [_new_conn: connectionpool.py, 230] Starting new HTTP connection (1): api.etmprot.etmcn.com:80
+[2020-11-09 15:17:49] DEBUG [_make_request: connectionpool.py, 442] http://api.etmprot.etmcn.com:80 "POST /daycare/course_management HTTP/1.1" 200 None
+[2020-11-09 15:17:49] INFO [log_case_info: operate_logger.py, 12] 用例名称：早教排课
+[2020-11-09 15:17:49] INFO [log_case_info: operate_logger.py, 13] 测试用例：daycarecourse
+[2020-11-09 15:17:49] INFO [log_case_info: operate_logger.py, 14] url：http://api.etmprot.etmcn.com/daycare/course_management
+[2020-11-09 15:17:49] INFO [log_case_info: operate_logger.py, 15] 请求参数：{"courseId": 22, "clazzId": 24, "classsroomId": 26, "teacherId": 2407, "helperTeacherIds": "2407", "courseDate": "2020-11-09", "colorCode": "rgb(255,69,0)", "courseTimePeriodId": 348, "formalChildIdList": [389], "expChildIdList": [373]}
+[2020-11-09 15:17:49] INFO [log_case_info: operate_logger.py, 16] 期望结果：成功
+[2020-11-09 15:17:49] INFO [log_case_info: operate_logger.py, 17] 实际结果：{'data': {'courseManagementId': 138, 'courseId': 22, 'clazzId': 24, 'classsroomId': 26, 'teacherId': 2407, 'helperTeacherIds': '2407', 'courseDate': 1604851200000, 'colorCode': 'rgb(255,69,0)', 'courseTimePeriodId': 348, 'totalFormalChildNum': 10, 'totalExpChildNum': 10, 'currentFormalChildNum': 1, 'currentExpChildNum': 1, 'enterpriseId': 663, 'courseTimePeriod': '08:00 - 09:00'}, 'code': 0, 'message': '成功', 'traceId': '9d0b809fa9d64bf490a3ddeb4f0b4985', 'detail': None}
+[2020-11-09 15:17:50] DEBUG [_make_request: connectionpool.py, 442] http://api.etmprot.etmcn.com:80 "DELETE /daycare/course_management/138 HTTP/1.1" 200 None
+[2020-11-09 15:17:50] INFO [log_case_info: operate_logger.py, 12] 用例名称：删除排课
+[2020-11-09 15:17:50] INFO [log_case_info: operate_logger.py, 13] 测试用例：deletedaycourse
+[2020-11-09 15:17:50] INFO [log_case_info: operate_logger.py, 14] url：http://api.etmprot.etmcn.com/daycare/course_management/138
+[2020-11-09 15:17:50] INFO [log_case_info: operate_logger.py, 15] 请求参数：{"courseManagementId": "138"}
+[2020-11-09 15:17:50] INFO [log_case_info: operate_logger.py, 16] 期望结果：成功
+[2020-11-09 15:17:50] INFO [log_case_info: operate_logger.py, 17] 实际结果：{'data': None, 'code': 0, 'message': '成功', 'traceId': '89514ae0269b4027a8338e7aeebf8dd9', 'detail': None}
+[2020-11-09 16:04:24] DEBUG [_new_conn: connectionpool.py, 230] Starting new HTTP connection (1): api.etmprot.etmcn.com:80
+[2020-11-09 16:04:24] DEBUG [_make_request: connectionpool.py, 442] http://api.etmprot.etmcn.com:80 "POST /basic/auth/login HTTP/1.1" 200 None
+[2020-11-09 16:04:24] DEBUG [_new_conn: connectionpool.py, 230] Starting new HTTP connection (1): api.etmprot.etmcn.com:80
+[2020-11-09 16:04:24] DEBUG [_new_conn: connectionpool.py, 230] Starting new HTTP connection (2): api.etmprot.etmcn.com:80
+[2020-11-09 16:04:25] DEBUG [_make_request: connectionpool.py, 442] http://api.etmprot.etmcn.com:80 "POST /daycare/course_management HTTP/1.1" 200 None
+[2020-11-09 16:04:25] INFO [log_case_info: operate_logger.py, 12] 用例名称：早教排课
+[2020-11-09 16:04:25] INFO [log_case_info: operate_logger.py, 13] 测试用例：daycarecourse
+[2020-11-09 16:04:25] INFO [log_case_info: operate_logger.py, 14] url：http://api.etmprot.etmcn.com/daycare/course_management
+[2020-11-09 16:04:25] INFO [log_case_info: operate_logger.py, 15] 请求参数：{"courseId": 22, "clazzId": 24, "classsroomId": 26, "teacherId": 2407, "helperTeacherIds": "2407", "courseDate": "2020-11-09", "colorCode": "rgb(255,69,0)", "courseTimePeriodId": 348, "formalChildIdList": [389], "expChildIdList": [373]}
+[2020-11-09 16:04:25] INFO [log_case_info: operate_logger.py, 16] 期望结果：成功
+[2020-11-09 16:04:25] INFO [log_case_info: operate_logger.py, 17] 实际结果：{'data': {'courseManagementId': 139, 'courseId': 22, 'clazzId': 24, 'classsroomId': 26, 'teacherId': 2407, 'helperTeacherIds': '2407', 'courseDate': 1604851200000, 'colorCode': 'rgb(255,69,0)', 'courseTimePeriodId': 348, 'totalFormalChildNum': 10, 'totalExpChildNum': 10, 'currentFormalChildNum': 1, 'currentExpChildNum': 1, 'enterpriseId': 663, 'courseTimePeriod': '08:00 - 09:00'}, 'code': 0, 'message': '成功', 'traceId': '85fca5b49b3f4746b20ced85e88c64cb', 'detail': None}
+[2020-11-09 16:04:25] DEBUG [_make_request: connectionpool.py, 442] http://api.etmprot.etmcn.com:80 "DELETE /daycare/course_management/139 HTTP/1.1" 200 None
+[2020-11-09 16:04:25] INFO [log_case_info: operate_logger.py, 12] 用例名称：删除排课
+[2020-11-09 16:04:25] INFO [log_case_info: operate_logger.py, 13] 测试用例：deletedaycourse
+[2020-11-09 16:04:25] INFO [log_case_info: operate_logger.py, 14] url：http://api.etmprot.etmcn.com/daycare/course_management/139
+[2020-11-09 16:04:25] INFO [log_case_info: operate_logger.py, 15] 请求参数：{"courseManagementId": "139"}
+[2020-11-09 16:04:25] INFO [log_case_info: operate_logger.py, 16] 期望结果：成功
+[2020-11-09 16:04:25] INFO [log_case_info: operate_logger.py, 17] 实际结果：{'data': None, 'code': 0, 'message': '成功', 'traceId': 'ce2fd28f1d754e1891ce2841ce54d7dc', 'detail': None}
+[2020-11-09 16:05:18] DEBUG [_new_conn: connectionpool.py, 230] Starting new HTTP connection (1): api.etmprot.etmcn.com:80
+[2020-11-09 16:05:19] DEBUG [_make_request: connectionpool.py, 442] http://api.etmprot.etmcn.com:80 "POST /basic/auth/login HTTP/1.1" 200 None
+[2020-11-09 16:05:19] DEBUG [_new_conn: connectionpool.py, 230] Starting new HTTP connection (1): api.etmprot.etmcn.com:80
+[2020-11-09 16:05:19] DEBUG [_make_request: connectionpool.py, 442] http://api.etmprot.etmcn.com:80 "POST /daycare/child HTTP/1.1" 200 None
+[2020-11-09 16:05:19] DEBUG [_make_request: connectionpool.py, 442] http://api.etmprot.etmcn.com:80 "POST /daycare/course_management HTTP/1.1" 200 None
+[2020-11-09 16:05:19] INFO [log_case_info: operate_logger.py, 12] 用例名称：早教排课
+[2020-11-09 16:05:19] INFO [log_case_info: operate_logger.py, 13] 测试用例：daycarecourse
+[2020-11-09 16:05:19] INFO [log_case_info: operate_logger.py, 14] url：http://api.etmprot.etmcn.com/daycare/course_management
+[2020-11-09 16:05:19] INFO [log_case_info: operate_logger.py, 15] 请求参数：{"courseId": 22, "clazzId": 24, "classsroomId": 26, "teacherId": 2407, "helperTeacherIds": "2407", "courseDate": "2020-11-09", "colorCode": "rgb(255,69,0)", "courseTimePeriodId": 348, "formalChildIdList": [389], "expChildIdList": [373]}
+[2020-11-09 16:05:19] INFO [log_case_info: operate_logger.py, 16] 期望结果：成功
+[2020-11-09 16:05:19] INFO [log_case_info: operate_logger.py, 17] 实际结果：{'data': {'courseManagementId': 140, 'courseId': 22, 'clazzId': 24, 'classsroomId': 26, 'teacherId': 2407, 'helperTeacherIds': '2407', 'courseDate': 1604851200000, 'colorCode': 'rgb(255,69,0)', 'courseTimePeriodId': 348, 'totalFormalChildNum': 10, 'totalExpChildNum': 10, 'currentFormalChildNum': 1, 'currentExpChildNum': 1, 'enterpriseId': 663, 'courseTimePeriod': '08:00 - 09:00'}, 'code': 0, 'message': '成功', 'traceId': '62a063bd14694134b8d90ac21a9baea0', 'detail': None}
+[2020-11-09 16:05:20] DEBUG [_make_request: connectionpool.py, 442] http://api.etmprot.etmcn.com:80 "DELETE /daycare/course_management/140 HTTP/1.1" 200 None
+[2020-11-09 16:05:20] INFO [log_case_info: operate_logger.py, 12] 用例名称：删除排课
+[2020-11-09 16:05:20] INFO [log_case_info: operate_logger.py, 13] 测试用例：deletedaycourse
+[2020-11-09 16:05:20] INFO [log_case_info: operate_logger.py, 14] url：http://api.etmprot.etmcn.com/daycare/course_management/140
+[2020-11-09 16:05:20] INFO [log_case_info: operate_logger.py, 15] 请求参数：{"courseManagementId": "140"}
+[2020-11-09 16:05:20] INFO [log_case_info: operate_logger.py, 16] 期望结果：成功
+[2020-11-09 16:05:20] INFO [log_case_info: operate_logger.py, 17] 实际结果：{'data': None, 'code': 0, 'message': '成功', 'traceId': '54c59559d4d34a08a00820ecf7a50f79', 'detail': None}
+[2020-11-09 16:06:04] DEBUG [_new_conn: connectionpool.py, 230] Starting new HTTP connection (1): api.etmprot.etmcn.com:80
+[2020-11-09 16:06:04] DEBUG [_make_request: connectionpool.py, 442] http://api.etmprot.etmcn.com:80 "POST /basic/auth/login HTTP/1.1" 200 None
+[2020-11-09 16:06:04] DEBUG [_new_conn: connectionpool.py, 230] Starting new HTTP connection (1): api.etmprot.etmcn.com:80
+[2020-11-09 16:06:05] DEBUG [_make_request: connectionpool.py, 442] http://api.etmprot.etmcn.com:80 "POST /daycare/child HTTP/1.1" 200 None
+[2020-11-09 16:06:05] INFO [log_case_info: operate_logger.py, 12] 用例名称：添加学员
+[2020-11-09 16:06:05] INFO [log_case_info: operate_logger.py, 13] 测试用例：addstudent
+[2020-11-09 16:06:05] INFO [log_case_info: operate_logger.py, 14] url：http://api.etmprot.etmcn.com/daycare/child
+[2020-11-09 16:06:05] INFO [log_case_info: operate_logger.py, 15] 请求参数：{"avatar":"","childName":"zidonghuaceshi","relationshipList":[{"relationshipId":670,"parentName":"zidonghuaceshi","telephone":"15521283803"}],"gender":"MALE","birthday":"","areaCode":"","address":"","qqNumber":"","wechatNumber":"","followerId":2407,"marketerId":2407,"category":"UNSOLD","statusId":1460,"sourceId":675,"importanceAttrId":338,"tagIdList":[676]}
+[2020-11-09 16:06:05] INFO [log_case_info: operate_logger.py, 16] 期望结果：成功
+[2020-11-09 16:06:05] INFO [log_case_info: operate_logger.py, 17] 实际结果：{'data': {'childId': 422, 'enterpriseId': 663, 'personId': 652, 'childName': 'zidonghuaceshi', 'gender': 'MALE', 'birthday': None, 'lunarBirthday': None, 'areaCode': '', 'address': None, 'qqNumber': None, 'wechatNumber': None, 'followerId': 2407, 'marketerId': 2407, 'category': 'UNSOLD', 'statusId': 1460, 'sourceId': 675, 'importanceAttrId': 338}, 'code': 0, 'message': '成功', 'traceId': '5443ded225c3479eb58cb827438be0fe', 'detail': None}
+[2020-11-09 16:06:05] DEBUG [_make_request: connectionpool.py, 442] http://api.etmprot.etmcn.com:80 "POST /daycare/course_management HTTP/1.1" 200 None
+[2020-11-09 16:06:05] INFO [log_case_info: operate_logger.py, 12] 用例名称：早教排课
+[2020-11-09 16:06:05] INFO [log_case_info: operate_logger.py, 13] 测试用例：daycarecourse
+[2020-11-09 16:06:05] INFO [log_case_info: operate_logger.py, 14] url：http://api.etmprot.etmcn.com/daycare/course_management
+[2020-11-09 16:06:05] INFO [log_case_info: operate_logger.py, 15] 请求参数：{"courseId": 22, "clazzId": 24, "classsroomId": 26, "teacherId": 2407, "helperTeacherIds": "2407", "courseDate": "2020-11-09", "colorCode": "rgb(255,69,0)", "courseTimePeriodId": 348, "formalChildIdList": [389], "expChildIdList": [373]}
+[2020-11-09 16:06:05] INFO [log_case_info: operate_logger.py, 16] 期望结果：成功
+[2020-11-09 16:06:05] INFO [log_case_info: operate_logger.py, 17] 实际结果：{'data': {'courseManagementId': 141, 'courseId': 22, 'clazzId': 24, 'classsroomId': 26, 'teacherId': 2407, 'helperTeacherIds': '2407', 'courseDate': 1604851200000, 'colorCode': 'rgb(255,69,0)', 'courseTimePeriodId': 348, 'totalFormalChildNum': 10, 'totalExpChildNum': 10, 'currentFormalChildNum': 1, 'currentExpChildNum': 1, 'enterpriseId': 663, 'courseTimePeriod': '08:00 - 09:00'}, 'code': 0, 'message': '成功', 'traceId': 'a92b3118f8ed4ff2a45c0524b32c8635', 'detail': None}
+[2020-11-09 16:06:05] DEBUG [_make_request: connectionpool.py, 442] http://api.etmprot.etmcn.com:80 "DELETE /daycare/course_management/141 HTTP/1.1" 200 None
+[2020-11-09 16:06:05] INFO [log_case_info: operate_logger.py, 12] 用例名称：删除排课
+[2020-11-09 16:06:05] INFO [log_case_info: operate_logger.py, 13] 测试用例：deletedaycourse
+[2020-11-09 16:06:05] INFO [log_case_info: operate_logger.py, 14] url：http://api.etmprot.etmcn.com/daycare/course_management/141
+[2020-11-09 16:06:05] INFO [log_case_info: operate_logger.py, 15] 请求参数：{"courseManagementId": "141"}
+[2020-11-09 16:06:05] INFO [log_case_info: operate_logger.py, 16] 期望结果：成功
+[2020-11-09 16:06:05] INFO [log_case_info: operate_logger.py, 17] 实际结果：{'data': None, 'code': 0, 'message': '成功', 'traceId': '5dcca75aea714945bb1afe1910489686', 'detail': None}
+[2020-11-09 17:55:05] DEBUG [_new_conn: connectionpool.py, 230] Starting new HTTP connection (1): api.etmprot.etmcn.com:80
+[2020-11-09 17:55:05] DEBUG [_make_request: connectionpool.py, 442] http://api.etmprot.etmcn.com:80 "POST /basic/auth/login HTTP/1.1" 200 None
+[2020-11-09 17:55:05] DEBUG [_new_conn: connectionpool.py, 230] Starting new HTTP connection (1): api.etmprot.etmcn.com:80
+[2020-11-09 17:55:05] DEBUG [_make_request: connectionpool.py, 442] http://api.etmprot.etmcn.com:80 "POST /daycare/child HTTP/1.1" 200 None
+[2020-11-09 17:55:05] DEBUG [_make_request: connectionpool.py, 442] http://api.etmprot.etmcn.com:80 "POST /daycare/course_management HTTP/1.1" 200 None
+[2020-11-09 17:55:05] INFO [log_case_info: operate_logger.py, 12] 用例名称：早教排课
+[2020-11-09 17:55:05] INFO [log_case_info: operate_logger.py, 13] 测试用例：daycarecourse
+[2020-11-09 17:55:05] INFO [log_case_info: operate_logger.py, 14] url：http://api.etmprot.etmcn.com/daycare/course_management
+[2020-11-09 17:55:05] INFO [log_case_info: operate_logger.py, 15] 请求参数：{"courseId": 22, "clazzId": 24, "classsroomId": 26, "teacherId": 2407, "helperTeacherIds": "2407", "courseDate": "2020-11-09", "colorCode": "rgb(255,69,0)", "courseTimePeriodId": 348, "formalChildIdList": [389], "expChildIdList": [373]}
+[2020-11-09 17:55:05] INFO [log_case_info: operate_logger.py, 16] 期望结果：成功
+[2020-11-09 17:55:05] INFO [log_case_info: operate_logger.py, 17] 实际结果：{'data': {'courseManagementId': 142, 'courseId': 22, 'clazzId': 24, 'classsroomId': 26, 'teacherId': 2407, 'helperTeacherIds': '2407', 'courseDate': 1604851200000, 'colorCode': 'rgb(255,69,0)', 'courseTimePeriodId': 348, 'totalFormalChildNum': 10, 'totalExpChildNum': 10, 'currentFormalChildNum': 1, 'currentExpChildNum': 1, 'enterpriseId': 663, 'courseTimePeriod': '08:00 - 09:00'}, 'code': 0, 'message': '成功', 'traceId': 'd7b74e942cc343238d6ad33d0ef6785d', 'detail': None}
+[2020-11-09 17:55:06] DEBUG [_make_request: connectionpool.py, 442] http://api.etmprot.etmcn.com:80 "DELETE /daycare/course_management/142 HTTP/1.1" 200 None
+[2020-11-09 17:55:06] INFO [log_case_info: operate_logger.py, 12] 用例名称：删除排课
+[2020-11-09 17:55:06] INFO [log_case_info: operate_logger.py, 13] 测试用例：deletedaycourse
+[2020-11-09 17:55:06] INFO [log_case_info: operate_logger.py, 14] url：http://api.etmprot.etmcn.com/daycare/course_management/142
+[2020-11-09 17:55:06] INFO [log_case_info: operate_logger.py, 15] 请求参数：{"courseManagementId": "142"}
+[2020-11-09 17:55:06] INFO [log_case_info: operate_logger.py, 16] 期望结果：成功
+[2020-11-09 17:55:06] INFO [log_case_info: operate_logger.py, 17] 实际结果：{'data': None, 'code': 0, 'message': '成功', 'traceId': '0b9b6203d7e64ef7998a3d3fb360b52f', 'detail': None}
+[2020-11-11 10:43:02] DEBUG [_new_conn: connectionpool.py, 230] Starting new HTTP connection (1): api.etmprot.etmcn.com:80
+[2020-11-11 10:43:02] DEBUG [_make_request: connectionpool.py, 442] http://api.etmprot.etmcn.com:80 "POST /basic/auth/login HTTP/1.1" 200 None
+[2020-11-11 10:43:46] DEBUG [_new_conn: connectionpool.py, 230] Starting new HTTP connection (1): api.etmprot.etmcn.com:80
+[2020-11-11 10:43:47] DEBUG [_make_request: connectionpool.py, 442] http://api.etmprot.etmcn.com:80 "POST /basic/auth/login HTTP/1.1" 200 None
+[2020-11-11 10:44:13] DEBUG [_new_conn: connectionpool.py, 230] Starting new HTTP connection (1): api.etmprot.etmcn.com:80
+[2020-11-11 10:44:14] DEBUG [_make_request: connectionpool.py, 442] http://api.etmprot.etmcn.com:80 "POST /basic/auth/login HTTP/1.1" 200 None
+[2020-11-11 10:45:09] DEBUG [_new_conn: connectionpool.py, 230] Starting new HTTP connection (1): api.etmprot.etmcn.com:80
+[2020-11-11 10:45:09] DEBUG [_make_request: connectionpool.py, 442] http://api.etmprot.etmcn.com:80 "POST /basic/auth/login HTTP/1.1" 200 None
+[2020-11-11 10:45:09] DEBUG [_new_conn: connectionpool.py, 230] Starting new HTTP connection (1): api.etmprot.etmcn.com:80
+[2020-11-11 10:45:09] DEBUG [_make_request: connectionpool.py, 442] http://api.etmprot.etmcn.com:80 "POST /sacc/customer HTTP/1.1" 200 None
+[2020-11-11 10:45:09] INFO [log_case_info: operate_logger.py, 12] 用例名称：添加会员
+[2020-11-11 10:45:09] INFO [log_case_info: operate_logger.py, 13] 测试用例：logincustomer
+[2020-11-11 10:45:09] INFO [log_case_info: operate_logger.py, 14] url：http://api.etmprot.etmcn.com/sacc/customer
+[2020-11-11 10:45:09] INFO [log_case_info: operate_logger.py, 15] 请求参数：{"name":"633","contacts":[{"contactTypeId":29,"name":"333dady","phone":"15521222222"}],"birthday":"2017-06-21","gender":null,"eavAttributes":[]}
+[2020-11-11 10:45:09] INFO [log_case_info: operate_logger.py, 16] 期望结果：成功
+[2020-11-11 10:45:09] INFO [log_case_info: operate_logger.py, 17] 实际结果：{'data': {'id': 134, 'createTime': 1605062710171, 'updateTime': 1605062710171, 'fkPersonId': 153, 'fkOrganizationId': 663, 'clazzId': None, 'state': 'IN', 'admissionTime': 1605024000000, 'departureInfo': None, 'belongings': None}, 'code': 0, 'message': '成功', 'traceId': '745e62f6327b4f02a278f44c93987e54', 'detail': None}
+[2020-11-13 13:02:21] DEBUG [_new_conn: connectionpool.py, 230] Starting new HTTP connection (1): api.etmprot.etmcn.com:80
+[2020-11-13 13:02:22] DEBUG [_make_request: connectionpool.py, 442] http://api.etmprot.etmcn.com:80 "POST /basic/auth/login HTTP/1.1" 200 None
+[2020-11-13 13:02:22] DEBUG [_new_conn: connectionpool.py, 230] Starting new HTTP connection (1): api.etmprot.etmcn.com:80
+[2020-11-13 13:02:22] DEBUG [_make_request: connectionpool.py, 442] http://api.etmprot.etmcn.com:80 "POST /daycare/tc_contract HTTP/1.1" 200 None
+[2020-11-13 13:02:22] INFO [log_case_info: operate_logger.py, 12] 用例名称：新增合同
+[2020-11-13 13:02:22] INFO [log_case_info: operate_logger.py, 13] 测试用例：addcontract
+[2020-11-13 13:02:22] INFO [log_case_info: operate_logger.py, 14] url：http://api.etmprot.etmcn.com/daycare/tc_contract
+[2020-11-13 13:02:22] INFO [log_case_info: operate_logger.py, 15] 请求参数：{"contractNo": "202011131302222239", "childId": 398, "contractType": "NEW_SIGNING", "receivable": "100.00", "paid": "100.00", "paymentId": 247, "date": "2020-11-13", "validBeginTime": "2020-11-13", "validEndTime": "2020-11-13", "mainPerformanceId": 2407, "mainPercentage": 100, "secondaryPerformanceId": "", "secondaryPercentage": 0, "remake": "", "earnestMoneyId": "null", "listPurchaseItemsDTO": [{"id": 152, "name": "\u5174\u8da3\u73ed", "modify": "false", "netReceipts": 100, "receivable": 100, "img": "", "purchase": 1, "give": 0, "receivableNotes": 100, "netReceiptsNotes": 100, "cacSetMealEnum": "COURSE_TYPE"}]}
+[2020-11-13 13:02:22] INFO [log_case_info: operate_logger.py, 16] 期望结果：成功
+[2020-11-13 13:02:22] INFO [log_case_info: operate_logger.py, 17] 实际结果：{'data': {'cacContractId': None, 'childId': 398, 'contractType': 'NEW_SIGNING', 'receivable': 100.0, 'paid': 100.0, 'paymentId': 247, 'validBeginTime': 1605196800000, 'validEndTime': 1605196800000, 'mainPerformanceId': 2407, 'mainPercentage': 100, 'secondaryPerformanceId': None, 'secondaryPercentage': 0, 'businessType': 'TEACH', 'remake': '', 'enterpriseId': 648, 'earnestMoneyId': None}, 'code': 0, 'message': '成功', 'traceId': 'c780bf771e774244a9f3747826f0adbf', 'detail': None}
+[2020-11-13 13:02:22] DEBUG [_make_request: connectionpool.py, 442] http://api.etmprot.etmcn.com:80 "PUT /daycare/tc_contract/to_examine HTTP/1.1" 200 None
+[2020-11-13 13:02:23] DEBUG [_make_request: connectionpool.py, 442] http://api.etmprot.etmcn.com:80 "PUT /daycare/tc_contract/save_refund/134 HTTP/1.1" 200 None

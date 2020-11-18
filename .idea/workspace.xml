@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e8ad614a-9393-4a60-aae0-5d710b4a2327" name="Default Changelist" comment="" />
+    <list default="true" id="e8ad614a-9393-4a60-aae0-5d710b4a2327" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commen/readexcel.py" beforeDir="false" afterPath="$PROJECT_DIR$/commen/readexcel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ceshi.xls" beforeDir="false" afterPath="$PROJECT_DIR$/data/ceshi.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/depend_data.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/data/depend_data.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcase/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcase/test_student_contract.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/test_student_contract.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,30 +25,37 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1gwiUcpwkcxxzqCnn3RYGOTY9FA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Markdown" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/data" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\PycharmProjects\pytest\commen" />
-      <recent name="C:\Users\Administrator\PycharmProjects\pytest" />
-      <recent name="C:\Users\Administrator\PycharmProjects\pytest\testcase" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\PycharmProjects\pytest\data" />
       <recent name="C:\Users\Administrator\PycharmProjects\pytest\testcase" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\PycharmProjects\pytest\testcase\test_page" />
+      <recent name="C:\Users\Administrator\PycharmProjects\pytest\testcase" />
+      <recent name="C:\Users\Administrator\PycharmProjects\pytest\config" />
+      <recent name="C:\Users\Administrator\PycharmProjects\pytest\commen" />
+      <recent name="C:\Users\Administrator\PycharmProjects\pytest" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.test_logincustomer">
-    <configuration name="operate_yaml" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.test_interface (1)">
+    <configuration name="interface" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pytest" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -52,7 +67,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/commen/operate_yaml.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Administrator\PycharmProjects\pytest\testcase\test_page\test_interface.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -61,7 +76,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="run_all" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="readexcel" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pytest" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -69,11 +84,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/commen" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run_all.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/commen/readexcel.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -82,7 +97,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_enteripse" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test_interface (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pytest" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -90,11 +105,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcase" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcase/test_page" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testcase/test_enteripse.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testcase/test_page/test_interface.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -103,28 +118,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_login" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="pytest" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcase" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testcase/test_login.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test_logincustomer" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test_interface" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pytest" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -136,7 +130,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testcase/test_logincustomer.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Administrator\PycharmProjects\pytest\testcase\test_page\test_interface.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_student_contract" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pytest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcase" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testcase/test_student_contract.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -147,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test_logincustomer" />
-        <item itemvalue="Python.operate_yaml" />
-        <item itemvalue="Python.run_all" />
-        <item itemvalue="Python.test_enteripse" />
-        <item itemvalue="Python.test_login" />
+        <item itemvalue="Python.test_interface (1)" />
+        <item itemvalue="Python.test_student_contract" />
+        <item itemvalue="Python.test_interface" />
+        <item itemvalue="Python.interface" />
+        <item itemvalue="Python.readexcel" />
       </list>
     </recent_temporary>
   </component>
@@ -178,7 +193,70 @@
       <option name="presentableId" value="Default" />
       <updated>1599032071899</updated>
     </task>
+    <task id="LOCAL-00001" summary="提交11-4">
+      <created>1604478347960</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604478347960</updated>
+    </task>
+    <task id="LOCAL-00002" summary="提交11-4">
+      <created>1604478517142</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604478517142</updated>
+    </task>
+    <task id="LOCAL-00003" summary="提交11-4">
+      <created>1604485802896</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604485802896</updated>
+    </task>
+    <task id="LOCAL-00004" summary="提交11-5">
+      <created>1604559436230</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1604559436230</updated>
+    </task>
+    <task id="LOCAL-00005" summary="提交11-5">
+      <created>1604414642152</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1604414642153</updated>
+    </task>
+    <task id="LOCAL-00006" summary="提交11-5">
+      <created>1604414661091</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1604414661091</updated>
+    </task>
+    <task id="LOCAL-00007" summary="提交11-5">
+      <created>1604906236082</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1604906236082</updated>
+    </task>
+    <task id="LOCAL-00008" summary="提交11-9">
+      <created>1604909459230</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1604909459230</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="提交11-4" />
+    <MESSAGE value="提交11-5" />
+    <MESSAGE value="提交11-9" />
+    <option name="LAST_COMMIT_MESSAGE" value="提交11-9" />
   </component>
   <component name="WindowStateProjectService">
     <state x="421" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600062978653">
@@ -189,49 +267,82 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1599622342685" />
+    <state x="321" y="0" key="CommitChangelistDialog2" timestamp="1605684277854">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="321" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1605684277854" />
+    <state width="725" height="438" key="DebuggerActiveHint" timestamp="1605177753382">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="725" height="438" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1605177753382" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1599215480556">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1599215480556" />
-    <state width="1367" height="185" key="GridCell.Tab.0.bottom" timestamp="1603270929010">
+    <state width="1367" height="185" key="GridCell.Tab.0.bottom" timestamp="1605248739786">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1367" height="185" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1603270929010" />
-    <state width="1367" height="185" key="GridCell.Tab.0.center" timestamp="1603270929008">
+    <state width="1367" height="185" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1605248739786" />
+    <state width="1367" height="185" key="GridCell.Tab.0.center" timestamp="1605248739786">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1367" height="185" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1603270929008" />
-    <state width="1367" height="185" key="GridCell.Tab.0.left" timestamp="1603270929006">
+    <state width="1367" height="185" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1605248739786" />
+    <state width="1367" height="185" key="GridCell.Tab.0.left" timestamp="1605248739786">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1367" height="185" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1603270929006" />
-    <state width="1367" height="185" key="GridCell.Tab.0.right" timestamp="1603270929010">
+    <state width="1367" height="185" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1605248739786" />
+    <state width="1367" height="185" key="GridCell.Tab.0.right" timestamp="1605248739786">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1367" height="185" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1603270929010" />
-    <state width="1345" height="214" key="GridCell.Tab.1.bottom" timestamp="1600253789711">
+    <state width="1367" height="185" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1605248739786" />
+    <state width="1367" height="222" key="GridCell.Tab.1.bottom" timestamp="1605180143289">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="214" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600253789711" />
-    <state width="1345" height="214" key="GridCell.Tab.1.center" timestamp="1600253789711">
+    <state width="1367" height="222" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1605180143289" />
+    <state width="1367" height="222" key="GridCell.Tab.1.center" timestamp="1605180143289">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="214" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1600253789711" />
-    <state width="1345" height="214" key="GridCell.Tab.1.left" timestamp="1600253789711">
+    <state width="1367" height="222" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1605180143289" />
+    <state width="1367" height="222" key="GridCell.Tab.1.left" timestamp="1605180143289">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="214" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1600253789711" />
-    <state width="1345" height="214" key="GridCell.Tab.1.right" timestamp="1600253789711">
+    <state width="1367" height="222" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1605180143289" />
+    <state width="1367" height="222" key="GridCell.Tab.1.right" timestamp="1605180143289">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="214" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1600253789711" />
+    <state width="1367" height="222" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1605180143289" />
     <state x="184" y="6" key="SettingsEditor" timestamp="1599729259092">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1599729259092" />
-    <state x="363" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1602746463663">
+    <state width="691" height="372" key="XDebugger.FullValuePopup" timestamp="1604887345853">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="363" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1602746463663" />
+    <state width="691" height="372" key="XDebugger.FullValuePopup/0.0.1366.728@0.0.1366.728" timestamp="1604887345853" />
+    <state x="363" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1605146325765">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="363" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1605146325765" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1604557405389">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1604557405389" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="self" />
+        <watch expression="res" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
